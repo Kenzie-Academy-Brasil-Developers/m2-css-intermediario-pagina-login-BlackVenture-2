@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/mainPage.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="container">
+        <div class="box">
+            <aside class="text-infos">
+                <h1 class="slogan">Pagina de Login mais pratica possivel rsrs.</h1>
+            </aside>
+            <div class="login-infos">
+                <div class="forms">
+                    <label for="login">Login</label>
+                    <input class="inputs" type="text" name="login" placeholder="Email">
+                </div>
+                <div class="forms">
+                    <label for="senha">Senha</label>
+                    <input class="inputs" type="password" name="senha">
+                </div>
+                <a id="recover-password" href="#" data-control-modal="recovery">Esqueci minha Senha</a>
+                <button type="submit" class="login">Login</button>
+                <footer class="copyright">
+                    <p>Kenzie Academy</p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <div class="modal-wrapper" id="recovery">
+        <div id="password-recovery-page">
+            <div class="close-recovery-page" data-control-modal="recovery">
+                <a id="x-button-recovery-page" href="">X</a>
+            </div>
+            <label for="recovery-email">Digite o e-mail cadastrado</label>
+            <input type="text" name="recovery-email" placeholder="E-mail">
+            <button type="submit" id="password-recovery-button" control-modal="recovery">Enviar</button>
+        </div>
+    </div>
+    <script src="/scripts/modal.js"></script>
+</body>
+</html>
