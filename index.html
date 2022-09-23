@@ -26,7 +26,7 @@
                     <input class="inputs" type="password" name="senha">
                 </div>
                 <a id="recover-password" href="#" data-control-modal="recovery">Esqueci minha Senha</a>
-                <button type="submit" class="login">Login</button>
+                <button id="recover-password" type="submit" class="login" data-control-modal="login">Login</button>
                 <footer class="copyright">
                     <p>Kenzie Academy</p>
                 </footer>
@@ -43,6 +43,17 @@
             <button type="submit" id="password-recovery-button" control-modal="recovery">Enviar</button>
         </div>
     </div>
-    <script src="/scripts/modal.js"></script>
+    <div class="modal-wrapper" id="login">
+        <div id="password-recovery-page">
+            <div class="close-recovery-page" data-control-modal="login">
+                <a id="x-button-recovery-page" href="">X</a>
+            </div>
+            <label for="recovery-email">Login</label>
+            <input type="text" name="recovery-email" placeholder="E-mail">
+            <input type="text" name="recovery-email" placeholder="Password">
+            <button type="submit" id="password-recovery-button" control-modal="login">Entrar</button>
+        </div>
+    </div>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>
